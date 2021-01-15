@@ -1,0 +1,19 @@
+<?php
+return [
+    /**
+     * 文件保存格式
+     */
+    'savekey'   => Env::get('upload.savekey', '/uploads/{year}{mon}{day}/{filemd5}{.suffix}'),
+    /**
+     * 最大可上传大小
+     */
+    'maxsize'   => Env::get('upload.maxsize', '10mb'),
+    /**
+     * 可上传的文件类型
+     */
+    'mimetype'  => Env::get('upload.mimetype', 'jpg,png,bmp,jpeg,gif,zip,rar,xls,xlsx'),
+    /**
+     * 是否支持批量上传
+     */
+    'multiple'  => false,
+];
